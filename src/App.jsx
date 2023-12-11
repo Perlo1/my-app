@@ -1,4 +1,5 @@
 import { HelloWorld } from "./HelloWorld";
+import { Welcome } from "./Welcome";
 import { Message } from "./message";
 
 export function App() {
@@ -7,6 +8,7 @@ export function App() {
     <h1>My Awesome Application</h1>
     <hr/>
       <HelloWorld />
+      <Welcome name="Carlos"/>
       <Message />
     </div>
   );
