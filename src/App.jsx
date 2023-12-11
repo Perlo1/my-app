@@ -1,4 +1,5 @@
 import { HelloWorld } from "./HelloWorld";
+import { Message } from "./message";
 
 export function App() {
   return (
@@ -6,6 +7,7 @@ export function App() {
     <h1>My Awesome Application</h1>
     <hr/>
       <HelloWorld />
+      <Message />
     </div>
   );
 }
