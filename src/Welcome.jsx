@@ -1,4 +1,3 @@
-// Welcome.js
 import { Age } from './Age';
 import PropTypes from 'prop-types';
 

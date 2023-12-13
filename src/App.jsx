@@ -1,4 +1,4 @@
-// App.js
+
 import { HelloWorld } from './HelloWorld';
 import { Welcome } from './Welcome';
 import { Message } from './message';
