@@ -9,7 +9,7 @@ export function App() {
       <h1>My Awesome Application</h1>
       <hr />
       <HelloWorld />
-      <Welcome name="Ruben" age={24} />
+      <Welcome name="John" age={24} />
       <Message />
     </div>
   );
