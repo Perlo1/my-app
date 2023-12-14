@@ -1,4 +1,5 @@
 
+import { Clock } from './Clock';
 import { Counter } from './Counter';
 import { HelloWorld } from './HelloWorld';
 import { Welcome } from './Welcome';
@@ -15,6 +16,7 @@ export function App() {
       <Message />
       <AlertClock />
       <Counter initialValue={0} decrementAmount={2}/>
+      <Clock />
     </div>
   );
 }
