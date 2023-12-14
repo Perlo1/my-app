@@ -14,7 +14,7 @@ export function App() {
       <Welcome name="John" age={24} />
       <Message />
       <AlertClock />
-      <Counter initialValue={0}/>
+      <Counter initialValue={0} decrementAmount={2}/>
     </div>
   );
 }

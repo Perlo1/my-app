@@ -1,26 +1,30 @@
-import { useState } from "react"
+import React, { useState } from "react";
 
-export function Counter({initialValue = 0}) {
-    const [counter, setCounter] = useState(initialValue)
+function CounterDisplay({ count }) {
+  return <h2>I have counted to {count}</h2>;
+}
 
-    function handleCounterIncrement() {
-        setCounter((c) => c + 1)
-    }
+export function Counter({ initialValue = 0, decrementAmount = 1 }) {
+  const [counter, setCounter] = useState(initialValue);
 
-    function handleCounterDecrement(){
-        setCounter((c) => c - 1)
-    }
+  function handleCounterIncrement() {
+    setCounter((c) => c + 1);
+  }
 
-    function handleCounterReset(){
-        setCounter(initialValue)
-    }
+  function handleCounterDecrement() {
+    setCounter((c) => c - decrementAmount);
+  }
 
-    return (
-        <div>
-            <p>I have counted to {counter}</p>
-            <button onClick={handleCounterIncrement}>Increment</button>
-            <button onClick={handleCounterDecrement}>Decrement</button>
-            <button onClick={handleCounterReset}>Reset</button>
-        </div>
-    )
+  function handleCounterReset() {
+    setCounter(initialValue);
+  }
+
+  return (
+    <div>
+      <CounterDisplay count={counter} />
+      <button onClick={handleCounterIncrement}>Increment</button>
+      <button onClick={handleCounterDecrement}>Decrement</button>
+      <button onClick={handleCounterReset}>Reset</button>
+    </div>
+  );
 }
